@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CompetitionViewController">
+   <children>
+      <VBox prefHeight="585.0" prefWidth="800.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="800.0">
+               <children>
+                  <Button fx:id="backbutton" mnemonicParsing="false" styleClass="roundedbutton" stylesheets="@../values/style.css" text="&lt;-" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label fx:id="CompetitionName" styleClass="boldLabel" stylesheets="@../values/style.css" text="Competition Name">
+                     <font>
+                        <Font name="☞AbdoMaster-Medium" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fx:id="webIcon" fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../values/internet.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="SponserAndDate" styleClass="boldLabel" stylesheets="@../values/style.css" text="sponsered by: company                                Date:10/12/2021">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="Status" styleClass="boldLabel" stylesheets="@../values/style.css" text="Status: Finshed">
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Button fx:id="addPartcipant" mnemonicParsing="false" styleClass="roundedbutton" stylesheets="@../values/style.css" text="Add Partcipant +" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="30.0" left="600.0" />
+               </VBox.margin>
+            </Button>
+            <ScrollPane fx:id="ScrollPane" prefHeight="313.0" prefWidth="800.0" styleClass="transparent" stylesheets="@../values/style.css">
+               <content>
+                  <VBox alignment="TOP_CENTER" minWidth="700.0" prefHeight="200.0" prefWidth="785.0">
+                     <children>
+                        <GridPane fx:id="gridConS" alignment="TOP_CENTER" prefHeight="0.0" prefWidth="0.0" stylesheets="@../values/style.css">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </content></ScrollPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

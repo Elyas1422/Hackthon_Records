@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="addPane" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addCompetitionViewController">
+   <children>
+      <VBox fx:id="addpane" prefHeight="585.0" prefWidth="800.0" stylesheets="@../values/style.css">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="800.0">
+               <children>
+                  <Button fx:id="backbutton" mnemonicParsing="false" styleClass="roundedbutton" stylesheets="@../values/style.css" text="&lt;-" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label styleClass="boldLabel" stylesheets="@../values/style.css" text="Add a New Competition" textFill="WHITE">
+                     <font>
+                        <Font name="☞AbdoMaster-Medium" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="61.0" prefWidth="800.0">
+               <children>
+                  <VBox prefHeight="63.0" prefWidth="438.0">
+                     <children>
+                        <Label styleClass="boldLabel" stylesheets="@../values/style.css" text="Competition Name" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="competitionField" prefHeight="25.0" prefWidth="340.0" promptText="Competition Name">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="63.0" prefWidth="291.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <children>
+                        <CheckBox fx:id="typeChecker" alignment="BOTTOM_CENTER" mnemonicParsing="false" styleClass="nameOf" stylesheets="@../values/style.css" text="Team Based Competition" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label styleClass="boldLabel" stylesheets="@../values/style.css" text="Sponsored by" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="37.0" prefWidth="800.0">
+               <children>
+                  <TextField fx:id="sponserField" prefHeight="25.0" prefWidth="334.0" promptText="Company or Sponsor Name">
+                     <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="61.0" prefWidth="800.0">
+               <children>
+                  <VBox prefHeight="63.0" prefWidth="327.0">
+                     <children>
+                        <Label styleClass="boldLabel" stylesheets="@../values/style.css" text="Competition Link" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="linkField" prefHeight="25.0" prefWidth="297.0" promptText="Competition Link">
+                           <VBox.margin>
+                              <Insets left="50.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BASELINE_LEFT" prefHeight="63.0" prefWidth="291.0">
+                     <children>
+                        <Label styleClass="boldLabel" stylesheets="@../values/style.css" text="Competition Date" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dateField" prefHeight="25.0" prefWidth="257.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label prefHeight="27.0" prefWidth="572.0" styleClass="boldLabel" stylesheets="@../values/style.css" text="Note: To add new participants go to the competition page" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="ErrorMessage">
+               <VBox.margin>
+                  <Insets left="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="finishButton" mnemonicParsing="false" styleClass="roundedbutton" stylesheets="@../values/style.css" text="Add The Competition" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

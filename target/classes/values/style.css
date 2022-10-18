@@ -1,0 +1,122 @@
+
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.comboBox{
+    -fx-background-color: rgba(255,255,255,0.3);
+    -fx-background-radius: 30;
+}
+
+
+
+#scrollContainer{
+	 -fx-background-color: rgba(0,0,0,0);
+}
+
+
+
+#apptitle{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, #000428, #004e92); 
+	-fx-font-weight: bold;
+}
+#addbutton{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-fx-font-weight: bold;
+	
+}
+#addbutton:pressed{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, #141e30, #243b55);
+	-fx-font-weight: bold;
+	
+}
+.appBar{
+	  -fx-background-color: #333333;
+	
+}
+#gridCon{
+	 -fx-background-color: #444444;
+}
+
+
+.nameOf{
+	
+	 -fx-text-fill: #FFFFFF;
+	-fx-font-weight: bold;
+}
+.containerOfCompetition{
+	-fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+	
+}
+.containerOfCompetition:pressed{
+	 -fx-background-color:linear-gradient(to right, #141e30, #243b55);
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	  -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+	}
+.containerOfStudent{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-fx-font-weight: bold;
+	
+	
+}
+
+.add-btn{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-fx-font-weight: bold;
+	
+
+    
+}
+.add-btn:pressed{
+	-fx-background-radius: 30;
+	 -fx-text-fill: #FFFFFF;
+	 -fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	-fx-font-weight: bold;  
+}
+.boldLabel{
+	-fx-font-weight: bold;  
+	
+}
+.roundedbutton{
+	-fx-background-radius: 30;
+	-fx-background-color:linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+	
+}
+.roundedbutton:pressed{
+	-fx-background-radius: 30;
+	-fx-background-color:linear-gradient(to right, #ff00cc, #333399);
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+	
+}
+.contactButton{
+	-fx-background-radius: 30;
+	-fx-background-color:linear-gradient(to right, #000428, #004e92); 
+	-fx-font-weight: bold;  
+}
+
+.contactButton:pressed{
+	-fx-background-radius: 30;
+	-fx-background-color:linear-gradient(to right, #ff00cc, #333399);
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+	
+}
+.addPane{
+	-fx-background-color:linear-gradient(to right, #ff00cc, #333399);
+	
+}
+

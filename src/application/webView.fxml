@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.webViewController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="71.0" prefWidth="800.0" styleClass="appBar" stylesheets="@../values/style.css">
+         <children>
+            <Button fx:id="backbutton" mnemonicParsing="false" styleClass="roundedbutton" stylesheets="@../values/style.css" text="&lt;- Back" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="40.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="linkBox" editable="false" prefHeight="25.0" prefWidth="460.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <WebView fx:id="webview" layoutY="71.0" prefHeight="529.0" />
+   </children>
+</AnchorPane>

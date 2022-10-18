@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="ContainerCompetition" maxHeight="150.0" maxWidth="150.0" minHeight="150.0" minWidth="150.0" prefHeight="150.0" prefWidth="150.0" styleClass="containerOfCompetition" stylesheets="@../values/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.containerController">
+   <children>
+      <VBox layoutX="14.0" layoutY="-25.0" prefHeight="200.0" prefWidth="100.0" stylesheets="@../values/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="57.0" prefWidth="150.0">
+               <children>
+                  <Label fx:id="competitionName" styleClass="nameOf" stylesheets="@../values/style.css" text="Competition Name">
+                     <HBox.margin>
+                        <Insets left="10.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="150.0">
+               <children>
+                  <AnchorPane prefHeight="60.0" prefWidth="150.0">
+                     <children>
+                        <Label fx:id="nameOfsub" layoutX="44.0" layoutY="4.0" prefHeight="17.0" prefWidth="105.0" styleClass="nameOf" stylesheets="@../values/style.css" text="Company" />
+                        <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="19.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../values/building.png" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="83.0" layoutY="2.0" prefHeight="32.0" prefWidth="73.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="150.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="dateOfCompetiton" layoutX="44.0" layoutY="4.0" prefHeight="17.0" prefWidth="105.0" styleClass="nameOf" stylesheets="@../values/style.css" text="Date" />
+                        <ImageView fitHeight="47.0" fitWidth="20.0" layoutX="19.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../values/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
